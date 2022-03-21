@@ -1,0 +1,21 @@
+.atm-container {
+    background: rgba(90, 251, 90, 0.8);
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+  }
+  .money-container {
+    flex-grow: 1;
+  }
+  .user-input {
+    height: 20px;
+  }
+  .btn {
+    padding: 5px;
+  }
+  .mt-20 {
+    margin-top: 20px;
+  }
+  .cash-dispense-container {
+    flex-grow: 2;
+  }

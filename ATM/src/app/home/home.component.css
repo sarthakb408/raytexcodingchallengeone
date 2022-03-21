@@ -1,0 +1,14 @@
+.row{
+    margin-top: 10px;
+}
+.img{
+    width: 150px;
+    height: 150px;
+}
+.text{
+    margin: 20px;
+    font-size: 20px;
+}
+.card-body{
+    text-align: center;
+}

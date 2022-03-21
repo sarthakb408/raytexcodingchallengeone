@@ -1,0 +1,35 @@
+<div class="container">
+    <section class="atm-container">
+        <article class="money-container">
+          <form [formGroup]="ATMFormGroup" (ngSubmit)="atmSubmitHandler(ATMFormGroup.value)">
+            <div class="input-group">
+              <label class="input-title">
+                Enter the Amount : 
+              </label>
+              <div class="input-container">
+                <input type="number" class="user-input" formControlName="money"/>
+              </div>
+            </div>
+            <div class="action-block mt-20">
+              <button type="submit" [disabled]="ATMFormGroup.invalid" class="btn btn-primary">
+                Get Money
+              </button>
+            </div>
+          </form>
+        </article>
+        <article class="cash-dispense-container" *ngIf="isTransactionInitiated">
+          <h4 class="response-title">
+            You will get folowing amount
+          </h4>
+          <table class="cash-dispensed-list">
+            <tbody>
+              <tr *ngFor="let notes of notesDispensable;">
+                <td>{{notes}}</td>
+              </tr>
+            </tbody>
+          </table>
+          <h5 class="total-notes">Total notes dispensed: </h5>
+        </article>
+      </section>
+
+</div>
